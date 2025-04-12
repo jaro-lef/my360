@@ -7,9 +7,23 @@
     <!-- Link do CSS Pannellum -->
     <link rel="stylesheet" type="text/css" href="https://cdn.pannellum.org/2.5/pannellum.css">
     <script type="text/javascript" src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
-    <style>
-        body { margin: 0; padding: 0; }
-        #panorama { width: 100%; height: 100vh; }
+    <style>               
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+        }
+
+        #panorama  {
+            height: 60vh; /* 60% wysokości widoku */
+            aspect-ratio: 16 / 9; /* Zachowuje proporcje szerokości */
+            background-color: #ccc; /* tymczasowy kolor tła */
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
     </style>
 </head>
 <body>
